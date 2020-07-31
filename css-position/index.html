@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- 구글 크롬으로 하여금 이 문서가 html임을 알려줌-->
+<html>
+    <head>
+        <title>Thie is my title</title>
+        <meta charset="utf-8"> <!--내가 작성하는 문서가 어떤 언어로 작성되는지 알려줌-->
+        <!-- meta는 브라우저를 위한 정보-->
+        <meta name="description" content="Welcome to my KaKao clone">
+        <!-- 구글 같은 검색창에 치면 나오는 제목 밑의 글들-->
+        <meta name = "author" content = "Park min seok">
+        
+        <!-- position의 종류 4가지 : static, fixed, relative, absolute-->
+        <style>  
+            body,html {
+                height : 100%;
+                margin : 0;
+                padding : 0;
+            }
+            body {
+                height : 400%;
+                background-color : red;
+            }
+            #boxOne {
+                height : 300px;
+                width : 300px;
+                background-color : yellow;
+                position : static;
+            }
+            #boxTwo {
+                height : 300px;
+                width : 300px;
+                background-color : green;
+                position : fixed;
+            }
+            .abs-box {
+                width : 400px;
+                height : 400px;
+                background-color : yellow;
+                position : relative;
+            }
+            .abs-child {
+                width : 100px;
+                height : 100px;
+                background-color : green;
+                position : absolute;
+                right : 10px;
+                top : 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "abs-box">
+            <div class = "abs-child"></div>
+        </div>
+
+
+    </body>
+</html>
