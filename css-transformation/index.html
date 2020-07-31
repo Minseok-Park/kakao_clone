@@ -1,0 +1,28 @@
+<!--Transformation = html문서의 element들을 변경, 모습이 변하는 효과-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transformaiton</title>
+        <meta charset="utf-8">
+        <style>
+            .box {
+                width : 400px;
+                height : 400px;
+                transform : rotate(20deg);
+                background-color : red;
+                transition : transform 1s ease-in-out;
+            }
+            .box:hover {
+                transform : rotate(1turn) scale(.5, .5);
+                /*transform : rotate(45deg);*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Web/CSS/transform-->
+<!-- transform 관련 링크-->

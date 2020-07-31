@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transitions</title>
+        <!-- transition은 어떤 state (hover,active,visited,focus)가 변화할 때 적용됨.-->
+        <style>
+            .box {
+                background-color : green;
+                color : white;
+                /*transition:background-color 0.5s ease-in-out;*/
+                /*transition : all .5s ease-in-out;*/
+                transition : color 5s ease-in-out;
+            }
+            .box:hover {
+                background-color : red;
+                color : blue;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="box">
+            Text
+        </span>
+    </body>
+</html>
